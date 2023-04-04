@@ -1,0 +1,4 @@
+Home - Jayson
+Login Register - Gegie
+Settings with validation - kuya leonel
+Profile - paderna
