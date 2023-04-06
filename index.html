@@ -1,70 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./assets/css/sidebar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- CSS -->
+    <style>
+      /* top details   */
+      .top-details {
+        width: 500px;
+        height: 70px;
+        border: 1px solid;
+        margin: auto;
+      }
+
+      .top-profile-pic {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        margin: 4px;
+        border: 1px solid;
+        display: inline-block;
+      }
+
+      .top-profile-name {
+        width: 400px;
+        height: 65px;
+
+        display: inline-block;
+        position: relative;
+      }
+
+      .top-profile-name p {
+        position: absolute;
+      }
+      /* video container */
+      .video-container {
+        width: 500px;
+        height: 600px;
+        border: 1px solid;
+        border-radius: 10px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      /* bottom details */
+      .bottom-icon {
+        width: 500px;
+        height: 65px;
+        border: 1px solid;
+        margin: auto;
+      }
+
+      .icon-heart {
+        height: 60px;
+        width: 60px;
+      }
+
+      aside {
+        position: relative;
+      }
+
+      .mainSection {
+        position: absolute;
+        top: 0;
+        left: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
     <!-- SideBar -->
     <aside class="sidebar-container">
-        <div class="sidebar-header">
-            <figure>
-                <a href="./index.html"><img src="./assets/images/Sidebar/EditLogo.png" alt="Instagram Logo"></a>
-            </figure>
-        </div>
-        <div class="sidebar-links">
-            <ul>
-                <a href="./index.html">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44"
-                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <polyline points="5 12 3 12 12 3 21 12 19 12" />
-                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-                            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-                        </svg>
-                        <span>Home</span>
-                    </li>
-                </a>
-                <a href="./profile.html">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle"
-                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <circle cx="12" cy="12" r="9" />
-                            <circle cx="12" cy="10" r="3" />
-                            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                        </svg>
-                        <span>Profile</span>
-                    </li>
-                </a>
-
-            </ul>
-        </div>
-        <div class="sidebar-footer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="44" height="44"
-                viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
+      <div class="sidebar-header">
+        <figure>
+          <a href="./index.html"
+            ><img
+              src="./assets/images/Sidebar/EditLogo.png"
+              alt="Instagram Logo"
+          /></a>
+        </figure>
+      </div>
+      <div class="sidebar-links">
+        <ul>
+          <a href="./index.html">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-home"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+              </svg>
+              <span>Home</span>
+            </li>
+          </a>
+          <a href="./profile.html">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-user-circle"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="12" cy="10" r="3" />
                 <path
-                    d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
-                <circle cx="12" cy="12" r="3" />
-            </svg>
-            Settings
-        </div>
+                  d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                />
+              </svg>
+              <span>Profile</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="sidebar-footer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-settings"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#2c3e50"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+          />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+        Settings
+      </div>
     </aside>
-</body>
 
+    <!-- main section -->
+    <section class="mainSection">
+      <div class="top-details">
+        <div class="top-profile-pic"></div>
+        <div class="top-profile-name">
+          <p>Name: Render Name Here</p>
+        </div>
+      </div>
+      <div class="video-container"><h1>Render Video Here</h1></div>
+      <div class="bottom-icon">
+        <div class=""><i class="bi bi-suit-heart icon-heart"></i></div>
+      </div>
+    </section>
+  </body>
 </html>
